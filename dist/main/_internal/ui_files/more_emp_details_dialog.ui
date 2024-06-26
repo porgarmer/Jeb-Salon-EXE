@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1244</width>
+    <height>727</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>More Details</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_5">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #2C2C3B;
+}
+
+QLabel{
+	color: #E9E8E8;
+}
+
+QLineEdit, QComboBox, QDateEdit{
+	background-color: #E2CFEA;
+	border: none;
+	height: 30px;
+	border-radius: 10px;
+	color: #45405C;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+QMenu{
+	background-color: white;
+}
+
+   QMenu::item:selected {
+                background-color: #555;
+                color: white;
+            }
+
+QComboBox QAbstractItemView {
+	background-color: #E2CFEA;
+	color: #45405C;
+}
+
+QPushButton {
+                background-color: #5A2E74;  /* Background color of the buttons */
+                color: #E2CFEA;              /* Text color of the buttons */
+                border: none;               /* Remove button border */
+                border-radius: 10px;         /* Border radius of the buttons */
+                padding: 5px 15px;          /* Padding inside the buttons */
+                font-size: 14px;            /* Font size of the button text */
+				font-weight: bold;
+}
+
+QPushButton:hover {
+                background-color: #745288;  /* Background color on hover */
+}
+QPushButton:pressed {
+                background-color: #6B4483;  /* Background color on press */
+}</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <property name="leftMargin">
+       <number>50</number>
+      </property>
+      <property name="topMargin">
+       <number>50</number>
+      </property>
+      <property name="rightMargin">
+       <number>50</number>
+      </property>
+      <property name="bottomMargin">
+       <number>50</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>30</number>
+      </property>
+      <item row="2" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <spacer name="horizontalSpacer_11">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>848</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="close_button">
+          <property name="text">
+           <string>CLOSE</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../static/icons/cancel_button_light.svg</normaloff>../static/icons/cancel_button_light.svg</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="1">
+         <layout class="QVBoxLayout" name="verticalLayout_16">
+          <property name="spacing">
+           <number>20</number>
+          </property>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QLabel" name="emp_address">
+              <property name="font">
+               <font>
+                <family>JetBrains Mono</family>
+                <pointsize>12</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>ADDRESS: </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QLabel" name="emp_contact_num">
+              <property name="font">
+               <font>
+                <family>JetBrains Mono</family>
+                <pointsize>12</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>CONTACT NUMBER:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QLabel" name="emp_date_hired">
+              <property name="font">
+               <font>
+                <family>JetBrains Mono</family>
+                <pointsize>12</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>DATE HIRED:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <property name="spacing">
+             <number>20</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="emp_email_address">
+              <property name="font">
+               <font>
+                <family>JetBrains Mono</family>
+                <pointsize>12</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>EMAIL ADDRESS:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <item>
+               <widget class="QLabel" name="emp_available">
+                <property name="font">
+                 <font>
+                  <family>JetBrains Mono</family>
+                  <pointsize>12</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>AVAILABLE: </string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_15">
+          <property name="spacing">
+           <number>20</number>
+          </property>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QLabel" name="emp_fname">
+              <property name="font">
+               <font>
+                <family>JetBrains Mono</family>
+                <pointsize>12</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>FIRST NAME:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QLabel" name="emp_minitial">
+              <property name="font">
+               <font>
+                <family>JetBrains Mono</family>
+                <pointsize>12</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>MIDDLE INITIAL:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="emp_lname">
+              <property name="font">
+               <font>
+                <family>JetBrains Mono</family>
+                <pointsize>12</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>LAST NAME:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QLabel" name="emp_sex">
+              <property name="font">
+               <font>
+                <family>JetBrains Mono</family>
+                <pointsize>12</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>SEX: </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <item>
+             <widget class="QLabel" name="emp_services">
+              <property name="font">
+               <font>
+                <family>JetBrains Mono</family>
+                <pointsize>12</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>SERVICES</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="1">
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_19"/>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <property name="verticalSpacing">
+         <number>20</number>
+        </property>
+        <item row="0" column="2">
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>427</width>
+            <height>17</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0" colspan="3">
+         <widget class="QTableWidget" name="employment_history_table">
+          <property name="font">
+           <font>
+            <family>JetBrains Mono</family>
+            <pointsize>10</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QHeaderView::section{
+	background-color: #45405C;
+	color: #E9E8E8;
+	border: none;
+	font: 700 10pt &quot;JetBrains Mono&quot;;
+}
+
+QTableWidget{
+	background-color: #E2CFEA;
+	border: none;
+	alternate-background-color: #BCADC5;
+}
+
+QTableWidget::item:selected{
+	color: #2C2C3B;
+	background-color: #FFEE8c;  /* Background color for selected items */
+
+}
+QTableWidget::item{
+	color: #2C2C3B;
+	selection-color: #2C2C3B;  /* Text color for selected items */
+
+}
+</string>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::NoSelection</enum>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="showGrid">
+           <bool>true</bool>
+          </property>
+          <property name="gridStyle">
+           <enum>Qt::NoPen</enum>
+          </property>
+          <attribute name="horizontalHeaderVisible">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="horizontalHeaderCascadingSectionResizes">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderHighlightSections">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row/>
+          <column>
+           <property name="text">
+            <string>EH_ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>JOB DESCRIPTION</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>ESTABLISHMENT</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>START DATE</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>END DATE</string>
+           </property>
+          </column>
+          <item row="0" column="1">
+           <property name="text">
+            <string>cc</string>
+           </property>
+          </item>
+          <item row="0" column="2">
+           <property name="text">
+            <string>sdsd</string>
+           </property>
+          </item>
+          <item row="0" column="3">
+           <property name="text">
+            <string>sdds</string>
+           </property>
+          </item>
+          <item row="0" column="4">
+           <property name="text">
+            <string>SEGGS</string>
+           </property>
+          </item>
+          <item row="1" column="1">
+           <property name="text">
+            <string>sdf</string>
+           </property>
+          </item>
+          <item row="1" column="2">
+           <property name="text">
+            <string>sdf</string>
+           </property>
+          </item>
+          <item row="1" column="3">
+           <property name="text">
+            <string>gh</string>
+           </property>
+          </item>
+          <item row="1" column="4">
+           <property name="text">
+            <string>SEGGS</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <spacer name="horizontalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>426</width>
+            <height>17</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_9">
+          <property name="font">
+           <font>
+            <family>JetBrains Mono</family>
+            <pointsize>15</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>EMPLOYMENT HISTORY</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
